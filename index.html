@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Escape House — Maitama, Abuja</title>
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="escape.css">
+  </head>
+ <body>
+   <!-- NAV -->
+   <nav id="nav">
+    <div class="nav-inner">
+      <span class="brand">Escape House</span>
+      <div class="nav-links">
+        <a class="nav-link" href="#philosophy">Philosophy</a>
+        <a class="nav-link" href="#treatments">Treatments</a>
+        <a class="nav-link" href="#rooms">Rooms</a>
+        <a class="nav-link" href="#menu">Menu</a>
+        <a class="nav-link" href="#spaces">Spaces</a>
+        <a class="nav-link" href="#voices">Voices</a>
+        <a class="nav-link" href="#visit">Visit</a>
+        <button class="btn-ghost" id="nav-book-btn" style="margin-left:0.5rem;">Book</button>
+      </div>
+    </div>
+   </nav>
+
+   <!-- HERO -->
+   <section id="hero">
+    <div id="hero-canvas-wrap"></div>
+    <div id="hero-content">
+      <div class="fade-block" id="fade-1">
+        <div class="eyebrow">34 Usuma Street · Off Gana Street · Maitama</div>
+      </div>
+      <h1 class="fade-block" id="fade-2">A slower place<br><em>in a fast city.</em></h1>
+      <p class="fade-block" id="fade-3">
+        Thai and Balinese therapy, facials, and nail care, practiced in Maitama since long before "wellness" was a trend.
+      </p>
+      <div id="hero-cta-wrap" class="fade-block" id="fade-4">
+        <button class="btn-primary" id="hero-book-btn">Book your escape</button>
+      </div>
+    </div>
+    <div id="scroll-indicator"><div class="drip"></div></div>
+   </section>
+
+   <!-- WELCOME / SCATTER REVEAL -->
+   <section id="welcome">
+    <div class="welcome-inner">
+      <div class="welcome-text">
+        <div class="eyebrow">Welcome to</div>
+        <h2 class="welcome-headline">ESCAPE<br>HOUSE</h2>
+        <p class="welcome-sub">One roof. A room to sleep in, a table to eat at, hands to undo the week.</p>
+      </div>
+      <div class="welcome-canvas-wrap">
+        <canvas id="scatter-canvas"></canvas>
+      </div>
+    </div>
+   </section>
+
+   <!-- PHILOSOPHY -->
+   <section id="philosophy">
+    <div class="copy" id="philosophy-copy">
+      <div class="section-heading">
+        <div class="eyebrow">Our philosophy</div>
+        <h2>Touch, done with intention.</h2>
+        <p>Every session begins the same way: warm hands, warmed oil, and no clock in sight. We trained under Thai and Balinese masters who treat the body as a whole — not a list of symptoms — and we've kept that pace ever since opening our doors in Maitama.</p>
+      </div>
+      <p class="body">Abuja moves quickly. Escape House doesn't. We keep our rooms few, our schedule unhurried, and our therapists trained for years, not weeks — so the hour you give us is returned in full.</p>
+    </div>
+    <div id="bamboo-card"></div>
+   </section>
+
+   <!-- TREATMENTS -->
+   <section id="treatments">
+    <div class="inner">
+      <div class="section-heading">
+        <div class="eyebrow">Treatments</div>
+        <h2>Choose how you'd like to be cared for.</h2>
+      </div>
+      <div id="filter-pills"></div>
+      <div class="treatment-grid" id="treatment-grid"></div>
+    </div>
+   </section>
+
+   <!-- ROOMS -->
+   <section id="rooms">
+    <div class="inner">
+      <div class="section-heading">
+        <div class="eyebrow">Rooms & Suites</div>
+        <h2>Stay the night.</h2>
+        <p>Three room types, all quiet, all a short walk from the spa and the table.</p>
+      </div>
+      <div class="treatment-grid" id="room-grid"></div>
+    </div>
+   </section>
+
+   <!-- SPACES -->
+   <section id="spaces">
+    <div class="heading-wrap">
+      <div class="section-heading">
+        <div class="eyebrow">The spaces</div>
+        <h2>A short walk through Escape House.</h2>
+      </div>
+    </div>
+    <div class="space-scroll" id="space-scroll"></div>
+   </section>
+ 
+   <!-- MENU -->
+   <section id="menu">
+    <div class="inner">
+      <div class="section-heading">
+        <div class="eyebrow">The Table</div>
+        <h2>Dinner, unhurried.</h2>
+        <p>Nigerian classics and continental plates, open to guests and walk-ins alike.</p>
+      </div>
+      <div id="menu-pills"></div>
+      <div class="treatment-grid" id="menu-grid"></div>
+    </div>
+   </section>
+
+   <!-- VOICES -->
+   <section id="voices">
+    <div class="inner">
+      <div class="eyebrow">In their words</div>
+      <div id="voice-display"></div>
+      <div id="voice-dots"></div>
+    </div>
+   </section>
+
+   <!-- VISIT -->
+   <section id="visit">
+    <div>
+      <div class="section-heading">
+        <div class="eyebrow">Visit us</div>
+        <h2>Maitama, whenever you're ready.</h2>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:1.4rem;">
+        <div class="info-row"><div class="eyebrow">Address</div><p>34 Usuma Street, off Gana Street, Maitama, Abuja</p></div>
+        <div class="info-row"><div class="eyebrow">Phone</div><p>0809 922 4450</p></div>
+        <div class="info-row"><div class="eyebrow">Hours</div><p>Open daily, 9:00 AM – 9:00 PM</p></div>
+      </div>
+      <button class="btn-primary" id="visit-book-btn" style="margin-top:2.2rem;">Book your visit</button>
+    </div>
+    <div id="map-wrap">
+      <iframe title="Escape House location map" src="https://google.com" loading="lazy"></iframe>
+    </div>
+   </section>
+
+   <!-- FOOTER -->
+   <footer>
+    <div class="inner">
+      <span class="brand">Escape House</span>
+      <span class="contact">Maitama, Abuja · 0809 922 4450</span>
+      <span class="copyright" id="copyright-year"></span>
+    </div>
+   </footer>
+
+   <!-- MODAL -->
+   <div id="modal-overlay">
+    <div id="modal-box">
+      <button id="modal-close" aria-label="Close booking form">×</button>
+
+      <div id="form-view">
+        <div class="eyebrow">Reserve</div>
+        <h3>Tell us how to reach you.</h3>
+        <form id="booking-form">
+          <label class="field-label">Service
+            <select id="service-select" class="field-input"></select>
+          </label>
+          <div class="field-row">
+            <label class="field-label">Date
+              <input type="date" id="date-input" class="field-input" />
+            </label>
+            <label class="field-label">Time
+              <select id="time-input" class="field-input">
+                <option value="">Select time</option>
+                <option>9:00 AM</option><option>10:00 AM</option><option>11:00 AM</option>
+                <option>12:00 PM</option><option>1:00 PM</option><option>2:00 PM</option>
+                <option>3:00 PM</option><option>4:00 PM</option><option>5:00 PM</option>
+                <option>6:00 PM</option><option>7:00 PM</option><option>8:00 PM</option>
+              </select>
+            </label>
+            <label class="field-label">Guests
+              <select id="guests-input" class="field-input">
+                <option>1 Person</option><option>2 People</option><option>3 People</option>
+                <option>4 People</option><option>5 People</option><option>6+ People</option>
+              </select>
+            </label>
+          </div>
+          <label class="field-label">Name
+            <input required id="name-input" class="field-input" placeholder="Your name" />
+          </label>
+          <label class="field-label">Phone
+            <input required id="phone-input" class="field-input" placeholder="080..." />
+          </label>
+          <button type="submit" class="btn-primary" style="width:100%; margin-top:0.5rem;">Request booking</button>
+          <p id="modal-note">We'll call to confirm your time. No payment needed now.</p>
+        </form>
+      </div>
+
+      <div id="confirm-view">
+        <div class="drip"></div>
+        <h3 id="confirm-heading"></h3>
+        <p id="confirm-detail"></p>
+        <button class="btn-ghost" id="confirm-done-btn" style="margin-top:1.6rem;">Done</button>
+      </div>
+    </div>
+   </div>
+
+   <!-- JAVASCRIPT CONNECT -->
+   <script src="escape.js"></script>
+  </body>
+</html>
